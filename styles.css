@@ -38,19 +38,23 @@ h3 {
 
 #app-screenshot {
     max-width: 387px;
+    width: 30vw;
     height: auto;
-    margin: auto
+    margin: auto;
+    box-sizing: border-box;
+    
+    
 }
 
 h1 {
     color: #8458B3;
-    font-size: 70px;
+    font-size: 4.5vw;
     font-weight: 900;
 }
 
 h2 {
     color: black;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
@@ -245,4 +249,12 @@ button {
 #close-button:hover {
   background-color: rgb(212, 24, 24);
   scale: 1.04;
+}
+
+
+@media all and (max-width: 600px) {
+  /* CSS rules here for screens lower than 750px */
+  #app-screenshot{
+    display: none;
+  }
 }
