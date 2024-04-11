@@ -180,7 +180,7 @@ button {
     width: 100%;
     height: 100%;
     background-color: black;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     opacity: 0;
@@ -228,8 +228,21 @@ button {
   #thankYou {
     width: 100%;
     display: none;
+    flex-direction: column;
+    justify-content: center;
   }
 
   p {
     text-align: center;
   }
+
+#close-button {
+  background-color: rgb(175, 53, 23);
+  text-align: center;
+  margin: auto;
+}
+
+#close-button:hover {
+  background-color: rgb(212, 24, 24);
+  scale: 1.04;
+}

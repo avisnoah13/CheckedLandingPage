@@ -6,6 +6,8 @@ function openForm() {
   
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
+    document.getElementById("dimmer").style.opacity = 0;
+    document.getElementById("dimmer").style.zIndex = "-1";
   }
 
 window.addEventListener("load", function() {
@@ -25,7 +27,7 @@ window.addEventListener("load", function() {
       btn.classList.remove("button--loading");
       btn.style.display = "block";
       form.style.display = "none";
-      thankYou.style.display = "block";
+      thankYou.style.display = "flex";
     })
   });
 });

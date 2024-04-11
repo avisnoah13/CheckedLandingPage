@@ -33,7 +33,7 @@
         <form id="my-form" method="POST" action="https://script.google.com/macros/s/AKfycbxqpP1r7MVSov_KClfsM9p70Qeb0xrXO1Yw7sapLJ57LgJgXiG99rpJQETKOHPn0hmObQ/exec" class="form-container">
           <h4>Enter your email and we will send you future updates</h4>
     
-          <input type="text" placeholder="Enter Email" name="Email" autocomplete="email" required>
+          <input type="email" placeholder="Enter Email" name="Email" autocomplete="email" required>
       
           <button type="submit" class="btn" id="submit-button">
             <span class="button__text">Submit</span>
@@ -42,6 +42,7 @@
         <div id="thankYou">
             <h3>Thank you for your interest!</h3>
             <p>We will update you when Checked is available for download</p>
+            <button id="close-button" onclick="closeForm() ">Close</button>
         </div>
         
     </div>
