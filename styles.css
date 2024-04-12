@@ -37,7 +37,7 @@ h3 {
 }
 
 #app-screenshot {
-    max-width: 387px;
+    max-width: 500px;
     width: 30vw;
     height: auto;
     margin: auto;
@@ -48,20 +48,20 @@ h3 {
 
 h1 {
     color: #8458B3;
-    font-size: 4.5vw;
+    font-size: min(4.5vw, 70px);
     font-weight: 900;
 }
 
 h2 {
     color: black;
-    font-size: 3vw;
+    font-size: min(3vw, 50px);
     font-weight: 400;
 }
 
 button {
     background-color: #8458B3;
     color: white;
-    font-size: 30px;
+    font-size: 2.5vw;
     font-weight: 400;
     text-align: center;
     border-radius: 15px;
@@ -72,6 +72,8 @@ button {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    width: 90%;
+    box-shadow: 10px 10px 37px -3px rgba(153,142,153,1);
 }
   
 .button:before {
@@ -251,10 +253,45 @@ button {
   scale: 1.04;
 }
 
+#mobile-screenshot {
+  display: none;
+}
+
 
 @media all and (max-width: 600px) {
   /* CSS rules here for screens lower than 750px */
   #app-screenshot{
     display: none;
   }
+
+  #logo {
+    display: none;
+  }
+
+  h3 {
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  button {
+    font-size: 4.5vw;
+    width: 100%;
+  }
+
+  #mobile-screenshot {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+
 }
