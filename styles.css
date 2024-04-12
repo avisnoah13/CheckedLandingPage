@@ -142,6 +142,7 @@ button {
     padding: 10px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 10px 10px 27px 0px rgba(0, 0, 0, 0.69);
   }
 
 .form-container {
@@ -240,21 +241,38 @@ button {
 
   p {
     text-align: center;
+    font-weight: 350;
+    font-size: 20px;
   }
 
 #close-button {
-  background-color: rgb(175, 53, 23);
+  background-color: #D22B2B;
   text-align: center;
+  width: 40%;
   margin: auto;
+  font-size: 20px;
 }
 
 #close-button:hover {
-  background-color: rgb(212, 24, 24);
   scale: 1.04;
 }
 
 #mobile-screenshot {
   display: none;
+}
+
+#thank-msg {
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#submit-button {
+  width: 60%;
+  margin: auto;
+  font-size: 30px;
+  display: block;
 }
 
 
