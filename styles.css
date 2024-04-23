@@ -145,11 +145,36 @@ button {
 #value-section {
   background-color: #494D5F;
   width: 100%;
-  height: 75vh
+  height: 60vh;
+  position: relative;
 }
 
 .white-para {
   color: white;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  font-size: 2vw;
+  font-weight: 300;
+}
+
+.center-container {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#big-question {
+  width: 100%;
+  text-align: center;
+  font-size: 8vw;
+  background: -webkit-linear-gradient(#A0D2EB, #a165b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -337,6 +362,48 @@ button {
     margin: auto;
     margin-top: 20px;
   }
+}
 
+.explain-card {
+  width: 95%;
+  margin: auto;
+  background-image: linear-gradient(to left bottom, #e5eaf5, #eceff7, #f3f4fa, #f9f9fc, #ffffff);
+  border-radius: 30px;
+  margin-top: 5vh;
+  height: 80vh;
+  box-shadow: 10px 11px 24px -15px rgba(0,0,0,0.36);
+}
 
+.sidebyside {
+  box-sizing: border-box;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.explain-app-screenshot {
+  height: 100%;
+}
+
+h5 {
+  color: #8458B3;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.explain-spacer {
+  width: 20%;
+}
+
+.explain-para {
+  text-align: left;
+  font-size: 2vw;
+  font-weight: 300;
+  color:#494D5F;
+}
+
+.explain-text-container {
+  max-width: 40%;
 }
