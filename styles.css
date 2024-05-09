@@ -18,8 +18,6 @@ html, body{
 .header {
     width: 100%;
     height: 12vh;
-    padding: 0px;
-    margin: 0px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -54,8 +52,12 @@ h3 {
     height: auto;
     margin: auto;
     box-sizing: border-box;
-    
-    
+}
+@media all and (max-height: 700px) {
+  #app-screenshot {
+    height: 80vh;
+    width: auto;
+  }
 }
 
 h1 {
@@ -327,43 +329,6 @@ button {
   display: block;
 }
 
-
-@media all and (max-width: 600px) {
-  /* CSS rules here for screens lower than 750px */
-  #app-screenshot{
-    display: none;
-  }
-
-  #logo {
-    display: none;
-  }
-
-  h3 {
-    text-align: center;
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 7vw;
-  }
-
-  h2 {
-    font-size: 5vw;
-  }
-
-  button {
-    font-size: 4.5vw;
-    width: 100%;
-  }
-
-  #mobile-screenshot {
-    display: block;
-    width: 70%;
-    margin: auto;
-    margin-top: 20px;
-  }
-}
-
 .explain-card {
   width: 95%;
   margin: auto;
@@ -390,7 +355,7 @@ button {
 h5 {
   color: #8458B3;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 3vw;
 }
 
 .explain-spacer {
@@ -406,4 +371,69 @@ h5 {
 
 .explain-text-container {
   max-width: 40%;
+}
+
+@media all and (max-width: 600px) {
+  /* CSS rules here for screens lower than 750px */
+
+  #hero-section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  #app-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  #app-screenshot {
+    width: 80%;
+    margin: auto;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  h3 {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  button {
+    font-size: 4.5vw;
+    width: 100%;
+  }
+
+  #value-section {
+    height: 30vh;
+  }
+
+  .white-para {
+    font-size: 2vh;
+    font-weight: 300;
+  }
+  
+  .sidebyside {
+    flex-direction: column;
+  }
+
+  .explain-app-screenshot {
+    height: 70%;
+  }
 }
