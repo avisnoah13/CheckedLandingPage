@@ -4,6 +4,7 @@ html, body{
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
+    background-color: #fefeff;
 }
 
 #hero-section{
@@ -373,8 +374,37 @@ h5 {
   max-width: 40%;
 }
 
+.footer {
+  height: 30vh;
+  background-color: white;
+  margin-top: 5vh;
+  box-shadow: 0px -5px 17px -4px rgba(0,0,0,0.11);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+h6 {
+  margin-left: 40%;
+  margin-right: 10%;
+  color: rgba(63, 63, 63, 0.934);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+
 @media all and (max-width: 600px) {
   /* CSS rules here for screens lower than 750px */
+
+.header {
+  position: static;
+}
+
+#header-spacer {
+  display: none;
+}
+
 
   #hero-section {
     height: auto;
@@ -452,5 +482,23 @@ h5 {
     text-align: center;
     font-size: 2vh;
     margin-top: -8%;
+  }
+
+  .form-popup {
+    max-width: 70%;
+    width: 70%;
+  }
+
+  #thank-explain{
+    margin-top: 0px;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  h6 {
+    margin: 0px;
+    margin-top: 5%;
   }
 }
