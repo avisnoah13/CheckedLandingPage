@@ -385,6 +385,7 @@ h5 {
     display: flex;
     justify-content: center;
     margin-top: 10%;
+    margin-bottom: 10%;
   }
 
   #app-screenshot {
@@ -435,5 +436,21 @@ h5 {
 
   .explain-app-screenshot {
     height: 70%;
+  }
+
+  .explain-text-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .explain-para {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: -8%;
   }
 }
